@@ -1,0 +1,171 @@
+/* Grundlegende Stile */
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #0a0a0a; /* Tiefes Schwarz/Dunkelblau für luxuriöses Ambiente */
+  color: #e0e0e0; /* Helle Schrift für guten Kontrast */
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000; /* Tiefes Schwarz für klassischen Luxus */
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #d4af37; /* Gold-Ton für luxuriösen Akzent */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+nav ul li a:hover {
+  color: #d4af37;
+}
+
+/* Hero-Section */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  background: #d4af37; /* Goldener Button */
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #b8962f; /* Etwas dunkleres Gold bei Hover */
+}
+
+/* Hauptinhalt */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #d4af37; /* Gold für Überschriften */
+}
+
+.services, .portfolio, .about, .contact {
+  margin-bottom: 60px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  padding: 20px;
+  flex: 1 1 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #d4af37;
+}
+
+.portfolio .gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  border: 2px solid #333;
+  max-width: 300px;
+  height: auto;
+}
+
+.about p, .contact p {
+  text-align: center;
+  line-height: 1.6;
+}
+
+a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b8962f;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #d4af37;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Dezente Anspielungen auf Gucci */
+nav ul li a:hover {
+  color: #d4af37;
+  text-shadow: 0 0 5px rgba(0,128,0,0.5); /* leichter grüner Schimmer */
+}
